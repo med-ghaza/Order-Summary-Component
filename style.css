@@ -1,0 +1,126 @@
+/* Start Variables */
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral */
+
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+/* End Variables */
+
+/* Start Global Rules */
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--Pale-blue);
+}
+
+@media (max-width: 767px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+  }
+}
+
+/* End Global Rules */
+
+/* Start Order Summary */
+
+.container {
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 2px 10px 0 var(--Desaturated-blue);
+}
+
+.container img {
+  max-width: 100%;
+}
+
+.container .content {
+  padding: 0 20px;
+}
+
+.container .content h1 {
+  font-size: 25px;
+  margin-top: 24px;
+}
+
+.container .content p {
+  color: var(--Desaturated-blue);
+  line-height: 26px;
+}
+.container .content .plan {
+  background-color: var(--Very-pale-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.container .content .plan .box {
+  display: flex;
+  align-items: center;
+}
+
+.container .content .plan img {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.container .content .plan .text {
+  font-weight: 900;
+}
+
+.container .content .plan .text span {
+  display: block;
+  margin-top: 5px;
+  color: var(--Desaturated-blue);
+  font-weight: normal;
+}
+
+.container .content .plan a {
+  color: var(--Bright-blue);
+  font-weight: 700;
+}
+
+.content button {
+  display: block;
+  width: 100%;
+}
+
+.content button:first-of-type {
+  padding: 10px;
+  background-color: var(--Bright-blue);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0px 7px 20px 0px var(--Desaturated-blue);
+  font-weight: 900;
+}
+
+.content button:last-child {
+  border: none;
+  background: white;
+  font-weight: 900;
+  color: var(--Desaturated-blue);
+  margin-bottom: 30px;
+}
+
+/* End Order Summary */
